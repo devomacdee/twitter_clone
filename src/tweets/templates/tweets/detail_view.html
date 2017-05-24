@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 
+{% block title %} Tweet Detail View | {{ block.super }} {% endblock title %} 
+
 {% block content %}
 
   {{ object.content }}<br>
   {{ object.user }}<br>
   {{ object.timestamp }}<br>
-  
+
 {% endblock content %}
